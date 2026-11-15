@@ -1,6 +1,6 @@
 # **Stop Overrating Chatbots**
 
-*An overview of what LLMs can do, what they can't do, and why we're giving them too much credit.*
+_An overview of what LLMs can do, what they can't do, and why we're giving them too much credit._
 
 ## **Proposed table of contents**
 
@@ -68,17 +68,21 @@
 
 ## **Como apresentaria cada secção**
 
-Por exemplo, cada heading teria um identificador próprio e um pequeno texto argumentativo. Não precisas de transformar tudo numa pergunta.
+Por exemplo, cada heading teria um identificador próprio e um pequeno texto argumentativo. Não
+precisas de transformar tudo numa pergunta.
 
 # **Generating Code Isn't Software Engineering**
 
 \#software-engineering · 5 min read
 
-Being able to generate code is not the same as understanding what that code does, how it interacts with the rest of the system, or whether it is the right solution to the problem.
+Being able to generate code is not the same as understanding what that code does, how it interacts
+with the rest of the system, or whether it is the right solution to the problem.
 
-A program that compiles and passes a handful of tests isn't necessarily well-designed, maintainable, secure, or correct.
+A program that compiles and passes a handful of tests isn't necessarily well-designed, maintainable,
+secure, or correct.
 
-Software engineering involves much more than producing source code. It involves architecture, trade-offs, constraints, debugging, testing, maintenance and understanding the system as a whole.
+Software engineering involves much more than producing source code. It involves architecture,
+trade-offs, constraints, debugging, testing, maintenance and understanding the system as a whole.
 
 Related: AI-Generated Technical Debt · The Context Window Illusion
 
@@ -88,12 +92,18 @@ Standalone argument
 
 ## **Algumas decisões de design que tomaria**
 
-- **Índice fixo no início:** cada entrada aponta para uma âncora (`#prompt-injection`, `#ai-infrastructure-bubble`, etc.).
-- **Secções independentes:** cada uma começa por apresentar a afirmação que está a contestar e depois desenvolve o argumento.
+- **Índice fixo no início:** cada entrada aponta para uma âncora (`#prompt-injection`,
+  `#ai-infrastructure-bubble`, etc.).
+- **Secções independentes:** cada uma começa por apresentar a afirmação que está a contestar e
+  depois desenvolve o argumento.
 - **Links entre secções:** permite navegar de um argumento para outro sem obrigar a ler tudo.
 - **Fontes e referências:** links para papers, documentação, benchmarks e dados financeiros.
-- **URLs com fragmentos:** podes enviar diretamente `stopoverratingchatbots.pt/#software-engineering` a alguém numa discussão.
+- **URLs com fragmentos:** podes enviar diretamente
+  `stopoverratingchatbots.pt/#software-engineering` a alguém numa discussão.
 
-Uma coisa que considero especialmente importante: não faria um FAQ tradicional com perguntas e respostas curtas. Faria um **argumentário técnico navegável**. O leitor pode percorrer tudo como um artigo longo ou saltar diretamente para a afirmação que quer contestar.
+Uma coisa que considero especialmente importante: não faria um FAQ tradicional com perguntas e
+respostas curtas. Faria um **argumentário técnico navegável**. O leitor pode percorrer tudo como um
+artigo longo ou saltar diretamente para a afirmação que quer contestar.
 
-Assim, quando alguém disser «AI can replace software engineers», não tens de discutir tudo outra vez. Envias-lhe a secção correspondente.
+Assim, quando alguém disser «AI can replace software engineers», não tens de discutir tudo outra
+vez. Envias-lhe a secção correspondente.
