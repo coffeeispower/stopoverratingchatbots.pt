@@ -42,9 +42,9 @@ fault. Everything is fine!
 Money. Of course.  
 And the possibility of monopolizing the entire market to themselves.
 
-## "The internet bubble popped, but we still use the internet so chatbot bubble will be the same"
+## "The internet bubble popped, but we still use the internet. AI is here to stay."
 
-This is a false equivalence fallacy used by many chatbot-pilled people around the internet. chatbot leans on
+This is a false equivalence fallacy used by many AI-pilled people around the internet. AI chatbots lean on a
 very different technology with very different properties and computing requirements than the early
 internet.
 
@@ -115,7 +115,7 @@ versions:
 | GPT-5 Codex            | <span class="font-mono">gpt-5-codex</span>                       |
 | Llama 3.3 70B Instruct | <span class="font-mono">meta-llama/llama-3.3-70b-instruct</span> |
 
-And they compared them to a comercial tool called *`Rector`* which is a dumb tool based on static rules:
+And they compared them to a commercial tool called *`Rector`* which is a dumb tool based on static rules:
 
 > [...] Pasting a legacy file into an LLM and asking it to
 “modernize this” is an easy shortcut. But is the result better than
@@ -141,12 +141,35 @@ modernization should therefore measure against a no-change
 baseline and report modernization and behavioral preservation
 separately. [...]
 
-\- Source: https://arxiv.org/pdf/2610.40269
+- Source: https://arxiv.org/pdf/2610.40269 - *When Modernization Breaks Working Code: A Single-File Study of LLMs on Legacy PHP*
 
 This essentially means that if you use LLMs to migrate your codebase to a different framework or update it or ask it to find bugs in your code it will most likely spit out garbage or non issues and will break your code. This is a direct counterproof to people that say that LLMs "do not hallucinate anymore".
 
 LLMs take a lot more computing resources than a simple rule based tool and yet it did much worse, so why do you still blindly trust chatbot code because "models got better"?
 
 ![AIPhpMigration.png](/assets/AIPhpMigration.png)
+
+## AI can only produce spaghetti code
+
+In my experience using OpenAI's codex, I need to always hand hold the AI to produce the desired code and the tendency for AI is to produce more and more sloppy code with no organization whatsoever and reinventing the wheel all the time.
+
+AI has a limited context, which means it cannot work on large projects because it keeps forgetting what is has already done and where it started.
+
+Don't take my word for it, let's take a look on 3 case studies where undiscriminated use of AI has completely ruined the codebase.
+
+### Case study 1: Zed
+
+The [zed editor](https://zed.dev/) is an alternative to VSCode written in rust with its own UI toolkit called [gpui](https://gpui.rs/) now available for anyone to use in their apps.
+
+It initially was not chatbot code, it was made by humans, but since the AI bubble started, they started using more and more chatbot slop code for critical parts of zed.
+
+[Gram](https://gram-editor.com/) is a hardfork of zed which aims to remove AI features and its proprietary parts and is the code editor
+I am using to write this website. It's creator (@krig) has found a lot of duplicated, unefficient slop code inside zed:
+
+> ![So far in the zed (now gram) codebase I have found three separate theme pickers, two separate markdown parsers and renderers, two separate language server installation implementations, one broken capability/permission system that only applies to one of the language server implementations and a system for loading settings from JSON that leveraged monomorphization bloat (convoluted generic async rust code strikes again) to generate 10 MB of code in the binary... and probably even more nonsense that I'm not remembering now. Trying to fix anything is like pulling at a thread in a ball of yarn but the ball of yarn is the ball from Katamari Damacy and out tumbles three cows, a high rise building and a brass orchestra](/assets/krig.png)
+
+Of course if you're working for a company nobody cares, your boss only cares about features and he wants them for yesterday... until 1 year later when some one needs to touch this code. Coding agents are tools for making a huge mess.
+
+## Case study 2: Humble Bundle
 
 </main>
