@@ -98,4 +98,55 @@ early GPT versions for example), they are still really useful when integrating i
 for extracting information from articles written in natural language (such as
 [finding release dates from wikipedia articles](https://www.youtube.com/watch?v=prHep3-DQvU&t=3388s)).
 
+## B..B..But AI is good at updating code!
+
+Sources:
+
+- https://pivot-to-ai.com/2026/11/11/but-the-ai-is-super-good-at-updating-code-well-no-it-isnt/
+
+No, it isn't. Someone got to test the following models for updating legacy PHP code to newer
+versions:
+
+| Model                  | API identifier                    |
+| ---------------------- | --------------------------------- |
+| Claude Sonnet 4        | <span class="font-mono">claude-sonnet-4-20250514</span>          |
+| Gemini 2.5 Flash       | <span class="font-mono">gemini-2.5-flash</span>                  |
+| Gemini 2.5 Pro         | <span class="font-mono">gemini-2.5-pro</span>                    |
+| GPT-5 Codex            | <span class="font-mono">gpt-5-codex</span>                       |
+| Llama 3.3 70B Instruct | <span class="font-mono">meta-llama/llama-3.3-70b-instruct</span> |
+
+And they compared them to a comercial tool called *`Rector`* which is a dumb tool based on static rules:
+
+> [...] Pasting a legacy file into an LLM and asking it to
+“modernize this” is an easy shortcut. But is the result better than
+leaving the code alone? In this paper, we study this single-file
+setting with five LLMs, each asked to modernize 100 WordPress
+4.0 PHP files to PHP 8.3 while preserving behavior, with no
+project context or execution feedback. We evaluate every output
+with 630 hidden behavioral checks and 511 Rector-detected
+modernization findings. We compare against two baselines: the
+unchanged originals and the rule-based tool Rector. Often, the
+answer is no. **Untouched, 83 files already pass every check; the
+best LLM leaves only 59. Each model breaks 32–51 working
+files while repairing at most 10, whereas Rector breaks 7 and
+repairs 6. Most of this damage is unnecessary. Only 37 findings
+(7%) require a change under PHP 8.3, yet in compatible files
+with no required change, the LLMs break 36–60% (Rector:
+8%).** The model with the highest modernization score is no
+more compatible than its closest competitors. Most regressed
+checks come from files that no longer load at all, often because
+of type declarations PHP itself rejects. These are errors that
+need no project context to avoid. Evaluations of LLM-based
+modernization should therefore measure against a no-change
+baseline and report modernization and behavioral preservation
+separately. [...]
+
+\- Source: https://arxiv.org/pdf/2610.40269
+
+This essentially means that if you use AI to migrate your codebase to a different framework or update it or ask it to find bugs in your code it will most likely spit out garbage or non issues and will break your code.
+
+AI takes a lot more computing resources than a simple rule based tool and yet it did much worse, so why do you still blindly trust AI code because "models got better"?
+
+![AIPhpMigration.png](/assets/AIPhpMigration.png)
+
 </main>

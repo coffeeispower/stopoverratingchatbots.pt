@@ -2,6 +2,7 @@
 
 :root {
 	--font-serif: "Radley", serif;
+	--font-mono: "Source Code Pro", monospace;
 }
 @layer base {
 	body.base {
@@ -140,11 +141,11 @@
 
 	/* Tables */
 	table {
-		@apply w-full my-8 border-collapse text-left text-sm;
+		@apply w-full my-8 border-collapse text-left text-sm border font-serif;
 	}
 
 	thead {
-		@apply bg-neutral-900 text-white;
+		@apply bg-neutral-200 text-black;
 	}
 
 	th {
