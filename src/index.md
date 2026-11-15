@@ -143,7 +143,7 @@ separately. [...]
 
 \- Source: https://arxiv.org/pdf/2610.40269
 
-This essentially means that if you use AI to migrate your codebase to a different framework or update it or ask it to find bugs in your code it will most likely spit out garbage or non issues and will break your code.
+This essentially means that if you use AI to migrate your codebase to a different framework or update it or ask it to find bugs in your code it will most likely spit out garbage or non issues and will break your code. This is a direct counterproof to people that say that AI "does not hallucinate anymore".
 
 AI takes a lot more computing resources than a simple rule based tool and yet it did much worse, so why do you still blindly trust AI code because "models got better"?
 
