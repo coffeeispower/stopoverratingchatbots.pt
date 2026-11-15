@@ -149,7 +149,7 @@ LLMs take a lot more computing resources than a simple rule based tool and yet i
 
 ![AIPhpMigration.png](/assets/AIPhpMigration.png)
 
-## AI can only produce spaghetti code
+## AI produces spaghetti code by default
 
 In my experience using OpenAI's codex, I need to always hand hold the AI to produce the desired code and the tendency for AI is to produce more and more sloppy code with no organization whatsoever and reinventing the wheel all the time.
 
