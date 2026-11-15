@@ -177,7 +177,8 @@ Of course if you're working for a company nobody cares, your boss only cares abo
 
 ### Case study 2: Humble Bundle
 <!-- TBD -->
+TBD
 ### Case study 3: An AI-pilled company going back to AI
 <!-- TBD -->
-
+TBD
 </main>
