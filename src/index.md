@@ -155,6 +155,7 @@ In my experience using OpenAI's codex, I need to always hand hold the AI to prod
 
 It is only useful for doing tasks like generating Effect Http API Client definitions from a OpenAPI 
 documentation file, and even then it still makes a lot of small mistakes I need to fix and debug right after.
+In fact it's so bad I'm literally now coding my own tool called `typesafer` which is a script specifically for this job.
 
 AI has a limited context, which means it cannot work on large projects because it keeps forgetting what is has already done and where it started.
 
