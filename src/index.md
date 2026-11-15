@@ -168,6 +168,8 @@ I am using to write this website. It's creator (@krig) has found a lot of duplic
 
 > ![So far in the zed (now gram) codebase I have found three separate theme pickers, two separate markdown parsers and renderers, two separate language server installation implementations, one broken capability/permission system that only applies to one of the language server implementations and a system for loading settings from JSON that leveraged monomorphization bloat (convoluted generic async rust code strikes again) to generate 10 MB of code in the binary... and probably even more nonsense that I'm not remembering now. Trying to fix anything is like pulling at a thread in a ball of yarn but the ball of yarn is the ball from Katamari Damacy and out tumbles three cows, a high rise building and a brass orchestra](/assets/krig.png)
 
+ - Source: https://goto.liten.app/@krig/statuses/01M1DSY8D9RC5VSDB6N9376B88
+
 Of course if you're working for a company nobody cares, your boss only cares about features and he wants them for yesterday... until 1 year later when some one needs to touch this code. Coding agents are tools for making a huge mess.
 
 ### Case study 2: Humble Bundle
