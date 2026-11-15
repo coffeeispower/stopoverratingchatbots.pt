@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+:root {
+    --font-serif: "Radley", serif;
+}
+@layer base {
+    body.base {
+        @apply max-w-3xl m-auto;
+    }
+    body.base img {
+        margin: 0 auto;
+        max-height: 400px;
+    }
+
+    .blinkyblink {
+      animation: blinkyblink 0.8s 11;
+    }
+
+    @keyframes blinkyblink {
+      0%    { border: 3px solid #D0D0D0; }
+      49.9% { border: 3px solid #D0D0D0; }
+      50%   { border: 3px solid #000000; }
+      100%  { border: 3px solid #000000; }
+    }
+  :root * {
+      @apply border-gray-200;
+  }
+  html {
+    @apply scroll-smooth scroll-pt-6;
+  }
+
+  body {
+    @apply mx-auto max-w-4xl px-6 py-10
+           bg-white text-neutral-900
+           font-sans leading-relaxed antialiased;
+  }
+
+  ::selection {
+    @apply bg-yellow-200 text-black;
+  }
+
+  /* Headings */
+  h1 {
+    @apply text-4xl sm:text-5xl font-extrabold
+           tracking-tight leading-tight mb-8;
+  }
+
+  h2 {
+    @apply text-4xl font-bold tracking-tight
+           mt-16 mb-6 pb-2 border-b-2 border-neutral-900;
+  }
+
+  h3 {
+    @apply text-2xl font-bold mt-10 mb-4;
+  }
+
+  h4 {
+    @apply text-xl font-semibold mt-8 mb-3;
+  }
+
+  /* Text */
+  p {
+    @apply my-5 text-base sm:text-lg leading-8 font-serif text-lg;
+  }
+
+  strong {
+    @apply font-bold text-black;
+  }
+
+  em {
+    @apply italic;
+  }
+
+  small {
+    @apply text-sm text-neutral-600;
+  }
+
+  /* Links */
+  a {
+    @apply text-blue-700 underline underline-offset-4
+           decoration-1 hover:text-blue-900
+           hover:decoration-2 transition-colors;
+  }
+
+  /* Lists */
+  ul {
+    @apply list-disc pl-7 my-5 space-y-2;
+  }
+
+  ol {
+    @apply list-decimal pl-7 my-5 space-y-2;
+  }
+
+  li {
+    @apply pl-1 leading-7;
+  }
+
+  li::marker {
+    @apply text-neutral-500;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    @apply my-8 border-l-4 border-neutral-900
+           bg-neutral-100 px-6 py-3;
+  }
+
+  blockquote p {
+    @apply my-2 text-neutral-700;
+  }
+
+  /* Horizontal rule */
+  hr {
+    @apply my-12 border-0 border-t-2 border-neutral-300;
+  }
+
+  /* Inline code */
+  :not(pre) > code {
+    @apply rounded bg-neutral-100 px-1.5 py-0.5
+           font-mono text-[0.9em] text-red-700;
+  }
+
+  /* Code blocks */
+  pre {
+    @apply my-8 overflow-x-auto rounded-lg
+           border border-neutral-300 bg-neutral-950
+           p-5 text-sm leading-6 text-neutral-100;
+  }
+
+  pre code {
+    @apply font-mono;
+  }
+
+  /* Images */
+  img {
+    @apply max-w-full h-auto rounded-lg;
+  }
+
+  figure {
+    @apply my-8;
+  }
+
+  figcaption {
+    @apply mt-2 text-center text-sm text-neutral-500;
+  }
+
+  /* Tables */
+  table {
+    @apply w-full my-8 border-collapse text-left text-sm;
+  }
+
+  thead {
+    @apply bg-neutral-900 text-white;
+  }
+
+  th {
+    @apply px-4 py-3 font-bold;
+  }
+
+  td {
+    @apply px-4 py-3 border-b border-neutral-300;
+  }
+
+  tbody tr:nth-child(even) {
+    @apply bg-neutral-50;
+  }
+
+  /* Definition / details */
+  details {
+    @apply my-5 border border-neutral-300 rounded-lg p-4;
+  }
+
+  summary {
+    @apply cursor-pointer font-semibold;
+  }
+}
+
+/* Custom reusable components */
+@layer components {
+  .callout {
+    @apply my-8 border-2 border-neutral-900
+           p-5 sm:p-6;
+  }
+
+  .callout-warning {
+    @apply border-yellow-500 bg-yellow-50;
+  }
+
+  .callout-danger {
+    @apply border-red-600 bg-red-50;
+  }
+
+  .callout-info {
+    @apply border-blue-600 bg-blue-50;
+  }
+
+  .toc {
+    @apply my-10 border-2 border-neutral-900 p-6;
+  }
+
+  .toc ul {
+    @apply my-3;
+  }
+
+  .badge {
+    @apply inline-block rounded border border-neutral-400
+           px-2 py-0.5 text-xs font-bold uppercase
+           tracking-wide;
+  }
+}
+@layer components {
+    .toc {
+        @apply border-none p-0;
+    }
+}
