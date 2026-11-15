@@ -156,7 +156,7 @@ In my experience using OpenAI's codex, I need to always hand hold the AI to prod
 It is only useful for doing tasks like generating Effect Http API Client definitions from a OpenAPI 
 documentation file, and even then it still makes a lot of small mistakes I need to fix and debug right after.
 
-AI has a limited context, which means it cannot work on large projects because it keeps forgetting what is has already done and where it started.
+AI has a limited context, which means it cannot work on large projects because it keeps forgetting what it has already done and where it started.
 
 Don't take my word for it, let's take a look on 3 case studies where undiscriminated use of AI has completely ruined the codebase.
 
