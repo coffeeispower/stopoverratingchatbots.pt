@@ -3,23 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <title>{{ title }}</title>
-        <meta name="description" content="Don't Panic! AGI is still science fiction: A reality check at the hype, limitations, and real-world impact of chatbots and large language models.">
+        <meta name="description" content="{{ description }}">
         <link rel="canonical" href="https://stopoverratingchatbots.pt/">
 
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://stopoverratingchatbots.pt/">
         <meta property="og:title" content="{{ title }}">
-        <meta property="og:description" content="Don't Panic! AGI is still science fiction: A reality check at the hype, limitations, and real-world impact of chatbots and large language models.">
-        <meta property="og:image" content="https://stopoverratingchatbots.pt/assets/thumbnail.png">
+        <meta property="og:description" content="{{ description }}">
+        <meta property="og:image" content="{{ image.url }}">
         <meta property="og:image:width" content="771">
         <meta property="og:image:height" content="411">
-        <meta property="og:image:alt" content="A stick figure reacts to an AI chatbot claiming to produce AGI.">
+        <meta property="og:image:alt" content="{{ image.alt | forceescape }}">
 
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="{{ title }}">
-        <meta name="twitter:description" content="Don't Panic! AGI is still science fiction: A reality check at the hype, limitations, and real-world impact of chatbots and large language models.">
-        <meta name="twitter:image" content="https://stopoverratingchatbots.pt/assets/thumbnail.png">
-        <meta name="twitter:image:alt" content="A stick figure reacts to an AI chatbot claiming to produce AGI.">
+        <meta name="twitter:description" content="{{ description }}">
+        <meta name="twitter:image" content="{{ image.url }}">
+        <meta name="twitter:image:alt" content="{{ image.alt | forceescape }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
@@ -27,11 +27,11 @@
         <link rel="icon" href="/favicon.png">
     </head>
     <body class="base">
-        {{ content }}
+        {{ content | safe }}
         <footer class=" text-black/60">
             <hr>
             Last updated:
-            <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y-%m-%d' }}</time>
+            <time datetime="{{ page.date | date('yyyy-MM-dd') }}">{{ page.date | date('yyyy-MM-dd') }}</time>
             <span class="mx-2 inline-block">·</span>
             Written by Tiago Dinis, aka <a href="https://github.com/coffeeispower">coffeeispower</a>.
         </footer>
