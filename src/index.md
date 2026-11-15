@@ -42,9 +42,9 @@ fault. Everything is fine!
 Money. Of course.  
 And the possibility of monopolizing the entire market to themselves.
 
-## "The internet bubble popped, but we still use the internet so AI bubble will be the same"
+## "The internet bubble popped, but we still use the internet so chatbot bubble will be the same"
 
-This is a false equivalence fallacy used by many AI-pilled people around the internet. AI leans on
+This is a false equivalence fallacy used by many chatbot-pilled people around the internet. chatbot leans on
 very different technology with very different properties and computing requirements than the early
 internet.
 
@@ -72,14 +72,14 @@ AI companies have already pretty much scraped all the data from the internet the
 the point they've become so desperate for data they started doing destructive scanning on rare books
 ([Anthropic cof cof](https://www.theguardian.com/commentisfree/2026/aug/05/anthropic-ai-destroying-books)).
 The human made data is running out and the models are starting to feed themselves with their own
-output because people use AI to make content and also post it on the internet mixed with the human
+output because people use chatbots to make content and post it on the internet mixed in with the human
 made content which in the long run will lead to model colapse as filtering human made content is
 getting harder which has been predicted in many academic studies and experiments.
 
 Only they have the files containing the weights of the models and then you pay for _(1)_ the license
 to have access to the model and _(2)_ running the models on their servers.
 
-This essentially means that if they were to die tomorrow we would lose those frontier AI models
+This essentially means that if they were to die tomorrow we would lose those frontier chatbot AI models
 forever, and making new LLMs is also not easy and no one has that kind of money and infrastructure
 and most hardware still can't run LLMs large enough to do anything close to the frontier models. On
 the average computer with integrated GPUs it will run at less than 1 token per second and will take
@@ -89,7 +89,7 @@ to the frontier models.
 And this is why if the AI bubble pops and the AI companies die, **don't expect to have access to the
 kind of frontier general purpose models we have today or that they will be economically viable or
 somehow more affordable than today**. The current trend is actually more like the opposite,
-[AI is getting more expensive](#ai-is-getting-more-expensive) as new models come out and companies
+[LLMs are getting more expensive](#llms-are-getting-more-expensive) as new models come out and companies
 run out of money and
 [change their business models to more expensive ones to try to compensate for their debt](https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits).
 
@@ -143,9 +143,9 @@ separately. [...]
 
 \- Source: https://arxiv.org/pdf/2610.40269
 
-This essentially means that if you use AI to migrate your codebase to a different framework or update it or ask it to find bugs in your code it will most likely spit out garbage or non issues and will break your code. This is a direct counterproof to people that say that AI "does not hallucinate anymore".
+This essentially means that if you use LLMs to migrate your codebase to a different framework or update it or ask it to find bugs in your code it will most likely spit out garbage or non issues and will break your code. This is a direct counterproof to people that say that LLMs "do not hallucinate anymore".
 
-AI takes a lot more computing resources than a simple rule based tool and yet it did much worse, so why do you still blindly trust AI code because "models got better"?
+LLMs take a lot more computing resources than a simple rule based tool and yet it did much worse, so why do you still blindly trust chatbot code because "models got better"?
 
 ![AIPhpMigration.png](/assets/AIPhpMigration.png)
 
