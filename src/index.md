@@ -24,7 +24,7 @@ And the possibility of monopolizing the entire market to themselves.
 
 ## "The internet bubble popped, but we still use the internet so AI bubble will be the same"
 
-This is a false equivalence fallacy used by many AI bros around the internet. AI leans on very
+This is a false equivalence fallacy used by many AI-pilled people around the internet. AI leans on very
 different technology with very different properties and computing requirements than the early
 internet.
 
