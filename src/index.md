@@ -167,7 +167,7 @@ The [zed editor](https://zed.dev/) is an alternative to VSCode written in rust w
 It initially was not chatbot code, it was made by humans, but since the AI bubble started, they started using more and more chatbot slop code for critical parts of zed.
 
 [Gram](https://gram-editor.com/) is a hardfork of zed which aims to remove AI features and its proprietary parts and is the code editor
-I am using to write this website. It's creator (@krig) has found a lot of duplicated, unefficient slop code inside zed:
+I am using to write this website. Its creator (@krig) has found a lot of duplicated, unefficient slop code inside zed:
 
 > ![So far in the zed (now gram) codebase I have found three separate theme pickers, two separate markdown parsers and renderers, two separate language server installation implementations, one broken capability/permission system that only applies to one of the language server implementations and a system for loading settings from JSON that leveraged monomorphization bloat (convoluted generic async rust code strikes again) to generate 10 MB of code in the binary... and probably even more nonsense that I'm not remembering now. Trying to fix anything is like pulling at a thread in a ball of yarn but the ball of yarn is the ball from Katamari Damacy and out tumbles three cows, a high rise building and a brass orchestra](/assets/krig.png)
 
