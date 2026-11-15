@@ -28,5 +28,12 @@
     </head>
     <body class="base">
         {{ content }}
+        <footer class=" text-black/60">
+            <hr>
+            Last updated:
+            <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y-%m-%d' }}</time>
+            <span class="mx-2 inline-block">·</span>
+            Written by Tiago Dinis, aka <a href="https://github.com/coffeeispower">coffeeispower</a>.
+        </footer>
     </body>
 </html>
