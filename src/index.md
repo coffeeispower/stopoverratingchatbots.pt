@@ -24,8 +24,8 @@ And the possibility of monopolizing the entire market to themselves.
 
 ## "The internet bubble popped, but we still use the internet so AI bubble will be the same"
 
-This is a false equivalence fallacy used by many AI-pilled people around the internet. AI leans on very
-different technology with very different properties and computing requirements than the early
+This is a false equivalence fallacy used by many AI-pilled people around the internet. AI leans on
+very different technology with very different properties and computing requirements than the early
 internet.
 
 > TLDR; The survival of a technology through a bubble does not guarantee the survival of the
@@ -66,14 +66,16 @@ the average computer with integrated GPUs it will run at less than 1 token per s
 multiple minutes just to load the model. And even if you have the hardware they still suck compared
 to the frontier models.
 
-And this is why if the AI bubble pops and the AI companies die, LLMs as a technology won't disappear
-(they already existed before ChatGPT), they are still really useful when integrating into other
-programs for extracting information from articles written in natural language (such as
-[finding release dates from wikipedia articles](https://www.youtube.com/watch?v=prHep3-DQvU&t=3388s&pp=ygUUc3BoYWVyb3Bob3JpYSBBSSB6aWc%3D)),
-but **don't expect to have access to the kind of frontier general purpose models we have today or
-that they will be economically viable or somehow more affordable than today**. The current trend is
-actually more like the opposite, [AI is getting more expensive](#ai-is-getting-more-expensive) as
-new models come out and companies run out of money and
+And this is why if the AI bubble pops and the AI companies die, **don't expect to have access to the
+kind of frontier general purpose models we have today or that they will be economically viable or
+somehow more affordable than today**. The current trend is actually more like the opposite,
+[AI is getting more expensive](#ai-is-getting-more-expensive) as new models come out and companies
+run out of money and
 [change their business models to more expensive ones to try to compensate for their debt](https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits).
+
+LLMs as a technology won't disappear (they already existed before ChatGPT even in GH Copilot and
+early GPT versions for example), they are still really useful when integrating into other programs
+for extracting information from articles written in natural language (such as
+[finding release dates from wikipedia articles](https://www.youtube.com/watch?v=prHep3-DQvU&t=3388s&pp=ygUUc3BoYWVyb3Bob3JpYSBBSSB6aWc%3D)).
 
 </main>
