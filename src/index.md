@@ -170,6 +170,9 @@ I am using to write this website. It's creator (@krig) has found a lot of duplic
 
 Of course if you're working for a company nobody cares, your boss only cares about features and he wants them for yesterday... until 1 year later when some one needs to touch this code. Coding agents are tools for making a huge mess.
 
-## Case study 2: Humble Bundle
+### Case study 2: Humble Bundle
+<!-- TBD -->
+### Case study 3: An AI-pilled company going back to AI
+<!-- TBD -->
 
 </main>
