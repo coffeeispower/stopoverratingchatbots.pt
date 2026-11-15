@@ -98,6 +98,52 @@ early GPT versions for example), they are still really useful when integrating i
 for extracting information from articles written in natural language (such as
 [finding release dates from wikipedia articles](https://www.youtube.com/watch?v=prHep3-DQvU&t=3388s)).
 
+### The scale of financial commitments is completely different
+
+There is another major difference between the tech companies of the late 1990s and today's AI companies: the scale and nature of the capital they are committing to infrastructure.
+
+Consider Amazon during the early dot-com era. According to its financial statements, Amazon reported approximately $76.5 million in long-term debt at the end of 1997, increasing to $348.1 million by the end of 1998. Adjusted for inflation, these amounts are roughly $155 million and $700 million in 2026 dollars.
+
+Facebook also used debt financing to expand its infrastructure. In May 2008, it secured a $100 million equipment lease facility from TriplePoint Capital, intended to finance servers and data-center infrastructure. That is roughly $150 million in 2026 dollars.
+
+Those were significant commitments for young technology companies, until you take a look at what the AI companies are doing:
+
+According to Anthropic's 2026 SEC registration filings, the company had $6.2 billion in outstanding indebtedness as of June 30, 2026, primarily consisting of convertible promissory notes issued to Amazon. Anthropic also disclosed approximately $900.9 billion in aggregate committed spending under purchase commitments and lease agreements, substantially all related to compute and infrastructure. This includes approximately $451.6 billion expected to be incurred before the end of 2030.
+
+Despite being drowned in so much debt, Anthropic is only making around 6,569 million dolars per year which is no where near what they need to pay all of that by 2030.
+
+OpenAI seems to be in a pretty similar situation, only a small percentage of its user base actually pays for their products.
+The AI bubble popping essentially means Anthropic going basically bankrupt, or at least its customers going bankrupt.
+
+## The Ponzi Scheme
+
+Explaining what is a Ponzi scheme is out of the scope of this website, you can learn about it here: https://www.youtube.com/watch?v=rfJpclWAaKg
+
+But if you squint your eyes a bit you can see the similarity between what happens in the AI industry and what a ponzi scheme is, because the AI bubble IS a ponzi scheme:
+- AI CEO's ask for investor's money promising high returns
+- They spend it on AI data centers
+- Doesn't get any actual profits
+- Gets more investor money
+- Pays the old ones
+
+It's a investor revolving door essentially;
+And this is not the only scam these little companies are doing.
+
+## The circular financing scheme
+
+This is the trick NVIDIA used to become the world's "biggest" company in the world.
+
+NVIDIA invests in OpenAI and Anthropic which then buy NVIDIA's chips to build the AI data centers, making NVIDIA's profits look stunning, although it's just money going around in circles. It's NVIDIA selling to itself essentially.
+
+![bloomberg graph](/assets/bloombergGraph.png)
+
+They promise there will be high demand for AI and high returns but the numbers
+show otherwise. People that do not work engineering jobs or live mostly offline
+couldn't care less about AI.
+
+This scheme was being led by Jensen Huang before [resigning from NVIDIA due to 2 affairs including an affair with a chinese
+spy](https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/). I don't know if this scheme will continue but it has a high probability of collapsing because the stock price right now is plummeting day by day and it's not slowing down. By the time i'm writing this, it has already gone down by \~28% from \~220$ to \~160$ and has lost about 300 billion dolars in valuation.
+
 ## B..B..But AI is good at updating code!
 
 Sources:
@@ -167,7 +213,7 @@ In my experience using OpenAI's codex, I need to always hand hold the AI to prod
 It is only useful for doing tasks like generating Effect Http API Client definitions from a OpenAPI 
 documentation file, and even then it still makes a lot of small mistakes I need to fix and debug right after.
 
-AI has a limited context, which means it cannot work on large projects because it keeps forgetting what it has already done and where it started.
+AI has a limited context window, which means it cannot work on large projects because it keeps forgetting what it has already done and where it started.
 
 Don't take my word for it, let's take a look on 3 case studies where undiscriminated use of AI has completely ruined the codebase.
 
