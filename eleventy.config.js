@@ -6,9 +6,8 @@ import markdownItAnchor from "markdown-it-anchor";
 export const config = {
 	dir: {
 		input: "src",
-  },
-  markdownTemplateEngine: "njk",
-
+	},
+	markdownTemplateEngine: "njk",
 };
 
 const isoDateFormatter = new Intl.DateTimeFormat("en", {
@@ -20,7 +19,8 @@ const isoDateFormatter = new Intl.DateTimeFormat("en", {
 
 export default function (eleventyConfig) {
 	eleventyConfig.addFilter("date", (value, format) => {
-		if (format !== "yyyy-MM-dd") throw new Error(`Unsupported date format: ${format}`);
+		if (format !== "yyyy-MM-dd")
+			throw new Error(`Unsupported date format: ${format}`);
 		return isoDateFormatter.format(value);
 	});
 	eleventyConfig.setLibrary(
@@ -41,18 +41,16 @@ export default function (eleventyConfig) {
 		wrapper: "nav",
 		wrapperClass: "toc",
 		ul: true,
-  });
-	const slots = {};
-	eleventyConfig.addGlobalData('eleventyComputed.slots', function() {
-		return data => {
-			const key = data.page.inputPath;
-			slots[key] = slots[key] || {};
-			return slots[key];
-		}
 	});
-	eleventyConfig.addPairedShortcode('slot', function (content, name) {
-		if (!name) throw new Error('Missing name for {% slot %} block!');
+	const slots = {};
+	eleventyConfig.addGlobalData("eleventyComputed.slots", () => (data) => {
+		const key = data.page.inputPath;
+		slots[key] = slots[key] || {};
+		return slots[key];
+	});
+	eleventyConfig.addPairedShortcode("slot", function (content, name) {
+		if (!name) throw new Error("Missing name for {% slot %} block!");
 		slots[this.page.inputPath][name] = content;
-		return '';
+		return "";
 	});
 }
