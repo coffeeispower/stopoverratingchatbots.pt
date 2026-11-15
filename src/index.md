@@ -76,6 +76,6 @@ run out of money and
 LLMs as a technology won't disappear (they already existed before ChatGPT even in GH Copilot and
 early GPT versions for example), they are still really useful when integrating into other programs
 for extracting information from articles written in natural language (such as
-[finding release dates from wikipedia articles](https://www.youtube.com/watch?v=prHep3-DQvU&t=3388s&pp=ygUUc3BoYWVyb3Bob3JpYSBBSSB6aWc%3D)).
+[finding release dates from wikipedia articles](https://www.youtube.com/watch?v=prHep3-DQvU&t=3388s)).
 
 </main>
