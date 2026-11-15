@@ -149,6 +149,17 @@ LLMs take a lot more computing resources than a simple rule based tool and yet i
 
 ![AIPhpMigration.png](/assets/AIPhpMigration.png)
 
+## Tests passing != Good code
+
+The software might work and the tests might pass, but the tests passing is not enough. Remember how TDD is supposed to work:
+![Fail, Make the test pass, Refactor cycle](https://miro.medium.com/0*3QZ1Mogwlvn0KbmW.jpg)
+
+Making the tests pass is just the middle, TDD works by doing this cycle until you're satisfied with both the 
+code and with what the code does.
+
+AI-pilled people say that AI is great with tests without understanding what a test passing actually means and subvert what TDD actually is.
+Which brings us to...
+
 ## AI produces spaghetti code by default
 
 In my experience using OpenAI's codex, I need to always hand hold the AI to produce the desired code and the tendency for AI is to produce more and more sloppy code with no organization whatsoever and reinventing the wheel all the time.
